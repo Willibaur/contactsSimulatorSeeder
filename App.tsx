@@ -24,7 +24,6 @@ export default function App() {
   useEffect(() => {
     if (!isDevice) {
       isSimulatorSeeded({}).then((result) => {
-        console.log('💻 🐛 - file: App.tsx:29 - useEffect - result:', result)
         setDisplaySeedButton(!result)
       })
     }
